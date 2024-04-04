@@ -3,14 +3,14 @@ import React, { useState, useContext } from "react";
 import { AuthContextProvider } from "../../context/AuthContext";
 
 function Login() {
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
-  const { setAuthUser } = useContext(AuthContextProvider);
+  // const [username, setUsername] = useState("");
+  // const [password, setPassword] = useState("");
+  // const { setAuthUser } = useContext(AuthContextProvider);
 
   const handleSubmit = (event) => {
     event.preventDefault();
     // Implement your authentication logic here
-    setAuthUser({ username });
+    // setAuthUser({ username });
   };
 
   return (
@@ -18,14 +18,14 @@ function Login() {
       <input
         type="text"
         placeholder="Username"
-        value={username}
-        onChange={(e) => setUsername(e.target.value)}
+        // value={username}
+        // onChange={(e) => setUsername(e.target.value)}
       />
       <input
         type="password"
         placeholder="Password"
-        value={password}
-        onChange={(e) => setPassword(e.target.value)}
+        // value={password}
+        // onChange={(e) => setPassword(e.target.value)}
       />
       <button type="submit">Log In</button>
     </form>

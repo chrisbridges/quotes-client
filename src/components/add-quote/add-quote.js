@@ -4,7 +4,7 @@ function AddQuote() {
   const [quote, setQuote] = useState("");
   const [author, setAuthor] = useState("");
   const [category, setCategory] = useState("");
-  const [categories, setCategories] = useState([]); // Placeholder for categories
+  // const [categories, setCategories] = useState([]); // Placeholder for categories
 
   useEffect(() => {
     // Fetch categories from your API and setCategories
@@ -31,11 +31,11 @@ function AddQuote() {
       />
       <select value={category} onChange={(e) => setCategory(e.target.value)}>
         <option value="">Select a category</option>
-        {categories.map((cat) => (
+        {/* {categories.map((cat) => (
           <option key={cat} value={cat}>
             {cat}
           </option>
-        ))}
+        ))} */}
       </select>
       <button type="submit">Add Quote</button>
     </form>
